@@ -45,7 +45,7 @@ function App() {
   };
   return (
     <div className="container">
-      <div role="banner">
+      <div>
         <img
           src="./images/bg-header-desktop.svg"
           alt=""
@@ -67,7 +67,7 @@ function App() {
               );
             })}
           </div>
-          <button className="clear" onClick={handleDelete}>
+          <button type="button" className="clear" onClick={handleDelete}>
             Clear
           </button>
         </div>
