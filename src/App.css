@@ -16,7 +16,7 @@ html{
 --Green-900: hsl(180, 14%, 20%);
 }
 .container{
-  width: min(100%, 1440px);
+  width: min(100%, 144.0rem);
   height: min(100vh, auto);
   margin-inline: auto;
   background-color: var(--Gray-Background);
@@ -165,7 +165,6 @@ button:hover{
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   background-color: #fff;
-  border-radius: 0.5rem;
   box-shadow:hsl(180, 29%, 50%, 0.1) 0px 48px 100px 0px;
 
 }
@@ -268,8 +267,10 @@ button:hover{
   }
 }
 
-@media(prefers-reduced-motion: no-preference){
-  button,.remove-filter{
-    transition: none;
+@media(prefers-reduced-motion: reduce){
+  *{
+    transition:none;
+    scroll-behavior:auto;
   }
+  
 }
